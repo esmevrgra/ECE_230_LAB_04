@@ -16,14 +16,7 @@ using an implemented design on your Basys3 boards.
 
 ## Lab Summary
 
-In this Lab how to apply KMaps to the verilog, We learned how to simplify the complex logic aquation. We had 4 inputs A,B,C,D .In the first we
-check the truth table with output of that. first by writing a direct “naive” sum-of-products expression that ORs together all minterms where 
-the output is 1, and then by converting the same truth table into a Karnaugh Map to simplify the logic into an optimized SOP, which we grouped
-all ones also it called  minterms.then we optimized POS which we grouped all zeros or maxterms.then we write the finall output from the truth table in the verilog.
-the same of lab 2  we created a new project and we followed all instruction. Then we implemented each version in Verilog (naive.v, minterm.v, maxterm.v), connected 
-Basys3 switches sw[3:0] to inputs A–D, and drove three LEDs with the three outputs so they should match for every input combination. at the finall we looked our logic
-equation how it simplified in verilog. then we tested our code  by generate bitstream and applying the truoth  table and see how led and sw will work correctly or not.
-we had some issues during the testing but then we solved and we got the desired result.
+In this lab, we learned how to apply KMaps in Verilog by simplifying complex logic equations. We worked with four inputs: A, B, C, and D, and used the truth table to determine the correct output. First, we wrote a direct “naive” Sum of Products (SOP) expression by OR-ing all the minterms where the output was 1. Then, we converted the same truth table into a Karnaugh Map and simplified it into an optimized SOP by grouping the 1’s (minterms). After that, we created an optimized Product of Sums (POS) by grouping the 0’s (maxterms). Next, we wrote the final logic equations in Verilog and implemented each version (naive.v, minterm.v, maxterm.v). We created a new Vivado project, followed the instructions, connected the Basys3 switches sw[3:0] to inputs A–D, and drove three LEDs with the three outputs so they matched for every input combination. Finally, we generated the bitstream and tested the design on the board by changing the switches and checking that the LEDs behaved correctly. We had some issues during testing, but we solved them and got the desired result.
 
 
 ## Lab Questions

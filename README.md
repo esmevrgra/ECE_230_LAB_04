@@ -16,7 +16,7 @@ using an implemented design on your Basys3 boards.
 
 ## Lab Summary
 
-In this Lab how to apply KMaps to the verilog, we learned how to simplify the complex logic aquation. we had 4 inputs A,B,C,D . first we
+In this Lab how to apply KMaps to the verilog, We learned how to simplify the complex logic aquation. We had 4 inputs A,B,C,D .In the first we
 check the truth table with output of that. first by writing a direct “naive” sum-of-products expression that ORs together all minterms where 
 the output is 1, and then by converting the same truth table into a Karnaugh Map to simplify the logic into an optimized SOP, which we grouped
 all ones also it called  minterms.then we optimized POS which we grouped all zeros or maxterms.then we write the finall output from the truth table in the verilog.
@@ -30,7 +30,7 @@ we had some issues during the testing but then we solved and we got the desired 
 
 ### Why are the groups of 1’s (or 0’s) that we select in the KMap able to go across edges?
 Because a KMap “wraps around.” The squares on the left edge are considered next to the squares on the right edge, and the top edge is next to the bottom edge. 
-This works because the KMap is arranged in Gray-code order, so those edge squares still differ by only one input bit butthey’re still adjacent cases.
+This works because the KMap is arranged in Gray-code order, so those edge squares still differ by only one input bit but they’re still adjacent cases.
 Since grouping means combining adjacent cases to cancel the variable that changes, groups are allowed to cross the edges.
 
 ### Why are the names Sum of Products and Products of Sums?
